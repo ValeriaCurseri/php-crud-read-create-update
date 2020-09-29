@@ -20,7 +20,6 @@ include __DIR__ . '/partials/home/server.php';
                 <tr>
                     <th>ID</th>
                     <th>Numero stanza</th>
-                    <th>Tipo di stanza</th>
                     <th>Piano</th>
                     <th></th>
                     <th></th>
@@ -33,7 +32,6 @@ include __DIR__ . '/partials/home/server.php';
                         <td><?php echo $room['id']; ?></td>
                         <td><?php echo $room['room_number']; ?></td>
                         <td><?php echo $room['floor']; ?></td>
-                        <td><?php echo $room['title']; ?></td>
                         <td><a href="">VIEW</a></td>
                         <td><a href="">UPDATE</a></td>
                         <td><a href="">DELETE</a></td>
