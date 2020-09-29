@@ -32,7 +32,7 @@ include __DIR__ . '/partials/home/server.php';
                         <td><?php echo $room['id']; ?></td>
                         <td><?php echo $room['room_number']; ?></td>
                         <td><?php echo $room['floor']; ?></td>
-                        <td><a href="">VIEW</a></td>
+                        <td><a href="view.php?id=<?php echo $room['id']; ?>">VIEW</a></td>
                         <td><a href="">UPDATE</a></td>
                         <td><a href="">DELETE</a></td>
                     </tr>
