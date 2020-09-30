@@ -6,6 +6,13 @@
 <div class="container">
     <div class="mt-5 mb-5">
         <h2>Tutte le stanze</h2>
+        <?php if(!empty($_GET['id'])){ 
+            $stanzaCancellata = $_GET['id'] ?>
+            <div class="alert mt-3 mb-3 bg-warning">
+                <?php echo "La stanza $stanzaCancellata è stata cancellata"; ?>
+            </div>
+        <?php }?>
+
         <table class="table">
             <thead>
                 <tr>

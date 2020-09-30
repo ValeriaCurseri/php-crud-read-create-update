@@ -8,8 +8,8 @@
     $result = $conn->query($sql);                       // creo una query della mia select
 
     if ($result){
-        echo "ok";
+        header("Location: $basepath/index.php?id=$id"); // quando la cancellazione è stata fatta lo rimando all'index.php
     } else {
-        echo "non cancellata";
+        echo "La stanza non è stata cancellata";
     }
 ?>
