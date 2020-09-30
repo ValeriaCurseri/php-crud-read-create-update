@@ -1,21 +1,12 @@
 <?php 
-
-include __DIR__ . '/partials/home/server.php';
-
+    include __DIR__ . '/partials/template/header.php';
+    include __DIR__ . '/partials/home/server.php';
 ?>
 
-
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Read & Delete</title>
-    <link rel="stylesheet" href="dist/app.css">
-</head>
-<body>
-    <div class="container">
-        <table class="table mt-5 mb-5">
+<div class="container">
+    <div class="mt-5 mb-5">
+        <h2>Tutte le stanze</h2>
+        <table class="table">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -45,5 +36,8 @@ include __DIR__ . '/partials/home/server.php';
             </tbody>
         </table>
     </div>
-</body>
-</html>
+</div>
+
+<?php 
+    include __DIR__ . '/partials/template/footer.php';
+?>
