@@ -21,4 +21,7 @@
         die('errore, hai provato a inserire un dato non valido');
     }
 
+    $stmt->close();
+    $conn->close();
+
 ?>

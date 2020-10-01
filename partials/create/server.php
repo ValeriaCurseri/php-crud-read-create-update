@@ -18,4 +18,7 @@
         echo "La stanza non è stata aggiunta";
     }
 
+    $stmt->close();
+    $conn->close();
+
 ?>
