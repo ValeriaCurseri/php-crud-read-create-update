@@ -42,8 +42,6 @@ function rimuoviId($conn, $table, $id, $basepath){
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $id);
     $stmt->execute();
-    var_dump($stmt);
-    var_dump($conn);
     
     if ($stmt && $stmt->affected_rows > 0){
         header("Location: $basepath/index.php?idCancellato=$id");
@@ -51,7 +49,6 @@ function rimuoviId($conn, $table, $id, $basepath){
         echo "La stanza non è stata cancellata";
     }
 
-    $stmt->close();
     $conn->close();
 
 }
