@@ -13,7 +13,7 @@
     $stmt->execute();
 
     if ($stmt && $stmt->affected_rows > 0) {        // se lo statemente è stato eseguito e la modifica è stata fatta
-        header("Location: $basepath/view.php?id");  // rimando l'utente alla view della stanza modificata
+        header("Location: $basepath/view.php?id=$id");  // rimando l'utente alla view della stanza modificata
     } elseif ($stmt && $stmt->affected_rows == 0) {
         echo "Non hai modificato nessun dato";
     } else {

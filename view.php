@@ -10,6 +10,7 @@ include __DIR__ . '/partials/view/server.php';
             <li class="list-group-item"><strong>ID: </strong><?php echo $row['id']; ?></li>
             <li class="list-group-item"><strong>Numero della stanza: </strong><?php echo $row['room_number']; ?></li>
             <li class="list-group-item"><strong>Piano: </strong><?php echo $row['floor']; ?></li>
+            <li class="list-group-item"><strong>Letti: </strong><?php echo $row['beds']; ?></li>
         </ul>
     </div>
 </div>
