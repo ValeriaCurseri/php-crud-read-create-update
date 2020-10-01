@@ -21,7 +21,7 @@
     $stmt->execute();                           // eseguo il tutto
     
     if ($stmt && $stmt->affected_rows > 0){     // se $stmt è stato eseguito e la modifica è stata effettuata reindirizzo all'index
-        header("Location: $basepath/index.php?id=$id"); // quando la cancellazione è stata fatta lo rimando all'index.php
+        header("Location: $basepath/index.php?idCancellato=$id"); // quando la cancellazione è stata fatta lo rimando all'index.php
     } else {
         echo "La stanza non è stata cancellata";
     }

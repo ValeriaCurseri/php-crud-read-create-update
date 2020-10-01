@@ -6,10 +6,16 @@
 <div class="container">
     <div class="mt-5 mb-5">
         <h2>Tutte le stanze</h2>
-        <?php if(!empty($_GET['id'])){ 
-            $stanzaCancellata = $_GET['id'] ?>
+        <?php if(!empty($_GET['idCancellato'])){ 
+            $stanzaCancellata = $_GET['idCancellato'] ?>
             <div class="alert mt-3 mb-3 bg-warning">
-                <?php echo "La stanza $stanzaCancellata è stata cancellata"; ?>
+                <?php echo "La stanza di id $stanzaCancellata è stata cancellata"; ?>
+            </div>
+        <?php }?>
+        <?php if(!empty($_GET['stanza'])){ 
+            $stanzaAggiunta = $_GET['stanza'] ?>
+            <div class="alert mt-3 mb-3 bg-warning">
+                <?php echo "La stanza $stanzaAggiunta è stata aggiunta"; ?>
             </div>
         <?php }?>
 
@@ -19,6 +25,7 @@
                     <th>ID</th>
                     <th>Numero stanza</th>
                     <th>Piano</th>
+                    <th>Letti</th>
                     <th></th>
                     <th></th>
                     <th></th>
@@ -30,6 +37,7 @@
                         <td><?php echo $room['id']; ?></td>
                         <td><?php echo $room['room_number']; ?></td>
                         <td><?php echo $room['floor']; ?></td>
+                        <td><?php echo $room['beds']; ?></td>
                         <td><a href="view.php?id=<?php echo $room['id']; ?>">VIEW</a></td>
                         <td><a href="update.php?id=<?php echo $room['id']; ?>">UPDATE</a></td>
                         <td>
